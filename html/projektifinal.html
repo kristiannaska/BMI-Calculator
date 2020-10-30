@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Health & Care </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--my own css style-->
+    <link rel="stylesheet" href="../css/style.css">
+    <!--other css for fonts and other-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesomwe.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uh2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- navbar -->
+    <div id="hide-page">
+        <header id="top">
+            <a href="projektifinal.html" class="logo">Health & Care</a>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#basic-info">Learn</a>
+                    </li>
+                    <li>
+                        <a href="calculator.html">BMI Calculator</a>
+                    </li>
+                    <li>
+                        <a href="tips.html"> Tips </a>
+                    </li>
+                    <li>
+                        <a href="#other">Other</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- login and sign up -->
+        <div class="login-wrapper">
+            <button class="login">Log In</button>
+            <div class="loginhide">
+                <div class="login-form" id="login">
+                    <div class="container" id="container">
+                        <div class="form-container sign-up-container">
+                            <form action="#">
+                                <h1>Create Account</h1>
+                                <div class="social-container">
+                                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                                <span>or use your email for registration</span>
+                                <input type="text" placeholder="Name" />
+                                <input type="email" placeholder="Email" />
+                                <input type="password" placeholder="Password" />
+                                <button>Sign Up</button>
+                            </form>
+                        </div>
+                        <div class="form-container sign-in-container">
+                            <form action="#">
+                                <h1>Sign in</h1>
+                                <div class="social-container">
+                                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                                <span>or use your account</span>
+                                <input type="email" placeholder="Email" />
+                                <input type="password" placeholder="Password" />
+                                <a href="#">Forgot your password?</a>
+                                <button onclick="showHide()">Sign In</button>
+                            </form>
+                        </div>
+                        <div class="overlay-container">
+                            <div class="overlay">
+                                <div class="overlay-panel overlay-left">
+                                    <h1>Already have an account?</h1>
+                                    <p>Please login with your personal info</p>
+                                    <button class="ghost" id="signIn">Sign In</button>
+                                </div>
+                                <div class="overlay-panel overlay-right">
+                                    <h1>New here?</h1>
+                                    <p>Register in just a few quick steps</p>
+                                    <button class="ghost" id="signUp">Sign Up</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- basic info banner -->
+        <div class="basic-info-banner" id="basic-info">
+            <div class="centered-text">
+                <h2>BMI Index</h2>
+            </div>
+        </div>
+
+        <!-- basic info text -->
+        <div class="basic-info-wrapper">
+            <article class="basic-info">
+                <p id="first-p">
+                    Body Mass Index is a value derived from the mass (weight) and height of a person. The BMI is defined
+                    as
+                    the body mass divided by the square of the body height, and is universally expressed in units of
+                    kg/m2,
+                    resulting from mass in kilograms and height in metres.
+                </p>
+                <p>
+                    The BMI may be determined using a tableor chart which displays BMI as a function of mass and height
+                    using contour lines or colours for different BMI categories, and which may use other units of
+                    measurement
+                </p>
+                <p>
+                    The BMI is a convenient rule of thumb used to broadly categorize a person as underweight, normal
+                    weight,
+                    overweight, or obese based on tissue mass (muscle, fat, and bone) and height. Commonly accepted BMI
+                    ranges are underweight (under 18.5 kg/m2), normal weight (18.5 to 25), overweight (25 to 30), and
+                    obese
+                    (over 30)
+                </p>
+            </article>
+        </div>
+
+        <!-- bottom-info-banner -->
+        <div class="bottom-info-banner" id="bottom-info">
+            <div class="centered-text">
+                <h2>Stay Healthy!</h2>
+            </div>
+        </div>
+
+        <!-- bottom-info -->
+        <div class="bottom-info-wrapper" id="tips">
+            <article>
+                <p>
+                    Be physically active for 30 minutes most days of the week. Break this up into three 10-minute
+                    sessions
+                    when pressed for time.
+                </p>
+                <p>
+                    Healthy movement may include walking, sports, dancing, yoga, running or other activities you enjoy.
+                </p>
+                <p>
+                    Eat a well-balanced, low-fat diet with lots of fruits, vegetables and whole grains. Choose a diet
+                    that's
+                    low in saturated fat and cholesterol, and moderate in sugar, salt and total fat.
+                </p>
+                <p>
+                    Find out more in our Tips page!
+                </p>
+            </article>
+        </div>
+
+        <!--go to calculator shortcut-->
+        <a class="calculate-now" href="calculator.html">calculate now</a>
+
+        <!--footer-->
+        <div id="other">
+            <footer>
+                <ul class="bottom-links">
+                    <li>
+                        <a href="#">Healthy Tips</a>
+                    </li>
+                    <li>
+                        <a href="#">Your Doctor</a>
+                    </li>
+                </ul>
+            </footer>
+        </div>
+    </div>
+
+    <!--javascript -->
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

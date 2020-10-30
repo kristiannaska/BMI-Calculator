@@ -1,0 +1,48 @@
+.tips-active{
+    text-decoration: none;
+    color: whitesmoke;
+    border: 3px solid #FF4B2B;
+    border-radius: 3px;
+    background-color: #FF4B2B;
+}
+
+.info{
+    width: 1000px;
+    margin: 60px auto;
+}
+
+.info article{
+    width: 1000px;
+    margin-top: 20px;
+}
+
+.info article p{
+    font-family:'Montserrat', sans-serif;
+    font-size:17px;
+    line-height: 25px;
+    text-align: justify;
+    padding: 20px 0px 30px 20px;
+}
+
+.tips-banner{
+    width: 100%;
+    height: 200px;
+    background-image: url(../image/healthy\ tips.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: table;
+}
+
+.tips-banner h2{
+    font-size: 35px;
+    font-weight: 900;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px #111;
+    text-align: center;
+}
+
+article p::first-letter{
+    font-size:x-large;
+}

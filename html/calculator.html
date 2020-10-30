@@ -1,0 +1,115 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>BMI Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--my own css style-->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style3.css">
+    <!--other css for fonts and other-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesomwe.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uh2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- nav bar -->
+    <header id="top">
+        <a href="projektifinal.html" class="logo">Health & Care</a>
+        <nav>
+            <ul>
+                <li>
+                    <a href="projektifinal.html">Learn</a>
+                </li>
+                <li>
+                    <a href="calculator.html" class="calc-active">BMI Calculator</a>
+                </li>
+                <li>
+                    <a href="tips.html"> Tips </a>
+                </li>
+                <li>
+                    <a href="#other">Other</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- calculator -->
+    <div class="container calc-wrapper" id="calculator">
+        <div class="card">
+            <div class="card-header calc-title">
+                BMI Calculator
+            </div>
+            <div class="card-body">
+                <form class="card-inside" onsubmit="return false">
+                    <div class="form-group">
+                        <label>
+                            Weight:
+                        </label>
+                        <input type="text" name="" placeholder="Enter your weight" required id="weight"
+                            class="form-control">
+                        <select id="dropdown-weight">
+                            <option value="1" selected>
+                                Kg
+                            </option>
+                            <option value="2">
+                                g
+                            </option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            Height:
+                        </label>
+                        <input type="text" name="" placeholder="Enter your height" required id="height"
+                            class="form-control">
+                        <select id="dropdown-height">
+                            <option value="1" selected>
+                                M
+                            </option>
+                            <option value="2">
+                                Cm
+                            </option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="outputlabel">
+                            <p id="bmivalue"></p>
+                            <p id="outputtext"></p>
+                        </label>
+
+                    </div>
+                    <div>
+                        <button type="submit" class="btn btn-success" onclick="calculatebmi()">
+                            Calculate
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div class="card-footer text-center">
+                A healthy BMIb index varies from 18.5 to 25
+            </div>
+        </div>
+    </div>
+
+    <!--footer-->
+    <div id="other">
+        <footer>
+            <ul class="bottom-links">
+                <li>
+                    <a href="#">Healthy Tips</a>
+                </li>
+                <li>
+                    <a href="#">Your Doctor</a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+
+    <!--javascript -->
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>
